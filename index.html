@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seventek creates custom Discord bots, community servers, automations, and moderation tools." />
+  <meta name="theme-color" content="#0b0d16" />
+  <title>Seventek - Discord Tools Built Better</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Seventek home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M11 11h26L25 24h12L11 37l12-13H11z" />
+          </svg>
+        </span>
+        <span>SEVENTEK</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#flux">Flux.ai</a>
+        <a href="#projects">Tools</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Discord development studio
+          </div>
+          <h1>Tools that make your <span>Discord</span> work smarter.</h1>
+          <p>
+            Seventek creates custom bots, automated systems, and complete server
+            experiences for communities that want more than a basic setup.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">
+              Build with Seventek
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4" />
+              </svg>
+            </a>
+            <a class="button button-ghost" href="#projects">Explore our tools</a>
+          </div>
+
+          <div class="hero-points" aria-label="Key capabilities">
+            <span><i></i> Custom-built</span>
+            <span><i></i> Secure by design</span>
+            <span><i></i> Ready to scale</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Discord bot dashboard preview">
+          <div class="dashboard-shell">
+            <div class="dash-topbar">
+              <div class="dash-brand">
+                <span class="mini-logo">7</span>
+                <strong>Seventek Control</strong>
+              </div>
+              <div class="dash-actions">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="dash-layout">
+              <aside class="dash-sidebar">
+                <div class="server-avatar">S</div>
+                <div class="server-icon active"></div>
+                <div class="server-icon"></div>
+                <div class="server-icon"></div>
+                <div class="server-icon add">+</div>
+              </aside>
+
+              <div class="dash-panel">
+                <div class="dash-heading">
+                  <div>
+                    <span>OVERVIEW</span>
+                    <h3>Community status</h3>
+                  </div>
+                  <span class="online-pill">Operational</span>
+                </div>
+
+                <div class="stats-grid">
+                  <article>
+                    <span>Members</span>
+                    <strong>24,819</strong>
+                    <small>+12.4% this month</small>
+                  </article>
+                  <article>
+                    <span>Commands</span>
+                    <strong>86.2K</strong>
+                    <small>99.98% success rate</small>
+                  </article>
+                </div>
+
+                <div class="activity-card">
+                  <div class="card-title">
+                    <span>Command activity</span>
+                    <small>Last 7 days</small>
+                  </div>
+                  <div class="chart" aria-hidden="true">
+                    <span style="--h:38%"></span>
+                    <span style="--h:52%"></span>
+                    <span style="--h:46%"></span>
+                    <span style="--h:68%"></span>
+                    <span style="--h:61%"></span>
+                    <span style="--h:82%"></span>
+                    <span style="--h:94%"></span>
+                  </div>
+                </div>
+
+                <div class="automation-row">
+                  <div class="automation-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+                      <circle cx="12" cy="12" r="3.5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Automod is active</strong>
+                    <span>1,284 events handled today</span>
+                  </div>
+                  <div class="switch active"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-chip chip-one">/verify complete</div>
+          <div class="floating-chip chip-two">+ 248 members</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-strip" aria-label="Features">
+      <div class="container strip-inner">
+        <span>MODERATION</span>
+        <i></i>
+        <span>AUTOMATION</span>
+        <i></i>
+        <span>ANALYTICS</span>
+        <i></i>
+        <span>COMMUNITY DESIGN</span>
+        <i></i>
+        <span>INTEGRATIONS</span>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">What we build</span>
+            <h2>Everything your Discord needs.</h2>
+          </div>
+          <p>
+            From one focused bot to a complete community system, every product
+            is designed around your server, your members, and your workflow.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="14" rx="4"/>
+                <path d="M9 10h.01M15 10h.01M9 15c1.8 1.3 4.2 1.3 6 0"/>
+              </svg>
+            </div>
+            <h3>Custom Bots</h3>
+            <p>Purpose-built bots with the exact commands, permissions, and integrations your community requires.</p>
+            <ul>
+              <li>Slash commands</li>
+              <li>Role systems</li>
+              <li>API integrations</li>
+            </ul>
+          </article>
+
+          <article class="service-card featured reveal delay-1">
+            <span class="popular-tag">Most popular</span>
+            <div class="service-number">02</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18V8l8-4 8 4v10l-8 4z"/>
+                <path d="M8 10h8M8 14h8M8 18h5"/>
+              </svg>
+            </div>
+            <h3>Server Development</h3>
+            <p>Complete Discord servers planned and configured for clean navigation, security, and member growth.</p>
+            <ul>
+              <li>Channel architecture</li>
+              <li>Permissions and roles</li>
+              <li>Onboarding flows</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal delay-2">
+            <div class="service-number">03</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v5l4 2M5 21h14M7 18a5 5 0 0 1 10 0"/>
+                <circle cx="12" cy="11" r="8"/>
+              </svg>
+            </div>
+            <h3>Automation</h3>
+            <p>Automated moderation, tickets, logs, notifications, and workflows that remove repetitive admin work.</p>
+            <ul>
+              <li>Moderation systems</li>
+              <li>Ticket workflows</li>
+              <li>Scheduled tasks</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section flux-section" id="flux">
+      <div class="flux-glow" aria-hidden="true"></div>
+      <div class="container flux-grid">
+        <div class="flux-copy reveal">
+          <span class="section-label">Featured product</span>
+          <div class="flux-title-row">
+            <span class="flux-logo" aria-hidden="true">F</span>
+            <h2>Meet Flux.ai</h2>
+          </div>
+          <p class="flux-lead">
+            Flux.ai is Seventek's AI chatbot built specifically for Discord,
+            giving communities fast, natural conversations without leaving the server.
+          </p>
+
+          <div class="flux-features">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Natural conversations</h3>
+                <p>Members can ask questions, get explanations, and continue conversations directly inside Discord.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Designed for communities</h3>
+                <p>Flux.ai fits naturally into Discord channels, replies, commands, and community workflows.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Simple to use</h3>
+                <p>No complicated setup for members - mention Flux.ai or use a command and start chatting.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="flux-actions">
+            <a class="button button-primary" href="#contact">
+              Add AI to your server
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4" />
+              </svg>
+            </a>
+            <span>Developed by Seventek</span>
+          </div>
+        </div>
+
+        <div class="flux-preview reveal delay-1" aria-label="Flux.ai Discord conversation preview">
+          <div class="discord-window">
+            <div class="discord-sidebar">
+              <span class="discord-server active">S</span>
+              <span class="discord-server"></span>
+              <span class="discord-server"></span>
+              <span class="discord-server add">+</span>
+            </div>
+
+            <div class="discord-channels">
+              <strong>SEVENTEK</strong>
+              <span># general</span>
+              <span class="active"># ask-flux</span>
+              <span># support</span>
+              <small>ONLINE - 248</small>
+              <div class="member">
+                <i class="bot-avatar">F</i>
+                <div>
+                  <strong>Flux.ai</strong>
+                  <span>AI Assistant</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="discord-chat">
+              <div class="chat-header">
+                <strong># ask-flux</strong>
+                <span>Ask Flux.ai anything</span>
+              </div>
+
+              <div class="chat-messages">
+                <article class="chat-message">
+                  <span class="user-avatar">D</span>
+                  <div>
+                    <div class="message-meta">
+                      <strong>Daniel</strong>
+                      <small>Today at 19:42</small>
+                    </div>
+                    <p>@Flux.ai can you explain what a Discord webhook does?</p>
+                  </div>
+                </article>
+
+                <article class="chat-message flux-response">
+                  <span class="bot-avatar">F</span>
+                  <div>
+                    <div class="message-meta">
+                      <strong>Flux.ai</strong>
+                      <span class="bot-tag">BOT</span>
+                      <small>Today at 19:42</small>
+                    </div>
+                    <p>
+                      A Discord webhook lets another app send messages into a channel
+                      without needing a full bot account. It is commonly used for alerts,
+                      automated updates, and integrations.
+                    </p>
+                    <div class="response-actions">
+                      <span>Helpful</span>
+                      <span>Explain more</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="chat-input">
+                <span>Message #ask-flux</span>
+                <i>+</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="flux-badge">AI for Discord</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">Selected tools</span>
+            <h2>Built for real communities.</h2>
+          </div>
+          <p>Examples of the systems Seventek can create and customise for your Discord server.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-large reveal">
+            <div class="project-content">
+              <span class="project-type">MODERATION PLATFORM</span>
+              <h3>Sentinel</h3>
+              <p>Advanced moderation with smart filters, audit trails, configurable actions, and a clean web dashboard.</p>
+              <div class="project-tags">
+                <span>Automod</span><span>Dashboard</span><span>Logging</span>
+              </div>
+            </div>
+            <div class="project-preview sentinel-preview">
+              <div class="preview-window">
+                <div class="preview-nav">
+                  <span class="preview-logo">S</span>
+                  <div></div><div></div><div></div>
+                </div>
+                <div class="preview-body">
+                  <div class="preview-header">
+                    <span></span>
+                    <button>Save changes</button>
+                  </div>
+                  <div class="rule">
+                    <span class="rule-icon">Aa</span>
+                    <div><strong>Spam protection</strong><small>Block repeated messages</small></div>
+                    <i></i>
+                  </div>
+                  <div class="rule">
+                    <span class="rule-icon">#</span>
+                    <div><strong>Link filtering</strong><small>Control external links</small></div>
+                    <i></i>
+                  </div>
+                  <div class="rule">
+                    <span class="rule-icon">!</span>
+                    <div><strong>Mention limits</strong><small>Prevent mass mentions</small></div>
+                    <i></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-content">
+              <span class="project-type">SUPPORT SYSTEM</span>
+              <h3>Relay</h3>
+              <p>A fast, organised ticket system for support teams and community staff.</p>
+              <div class="project-tags">
+                <span>Tickets</span><span>Transcripts</span>
+              </div>
+            </div>
+            <div class="mini-preview relay-preview">
+              <div class="ticket-message">
+                <div class="ticket-icon">R</div>
+                <div>
+                  <strong>How can we help?</strong>
+                  <small>Select a category below to open a ticket.</small>
+                  <button>Open ticket</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-content">
+              <span class="project-type">MEMBER EXPERIENCE</span>
+              <h3>Orbit</h3>
+              <p>Levels, achievements, rewards, and activity systems that keep members engaged.</p>
+              <div class="project-tags">
+                <span>Levels</span><span>Rewards</span>
+              </div>
+            </div>
+            <div class="mini-preview orbit-preview">
+              <div class="rank-card">
+                <div class="avatar">A</div>
+                <div class="rank-copy">
+                  <strong>Alex</strong>
+                  <span>Level 24</span>
+                  <div class="progress"><i></i></div>
+                  <small>7,420 / 10,000 XP</small>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container process-grid">
+        <div class="process-copy reveal">
+          <span class="section-label">How it works</span>
+          <h2>From idea to launch, without the mess.</h2>
+          <p>
+            A direct process keeps the project clear, avoids unnecessary features,
+            and delivers a tool your team can actually manage.
+          </p>
+          <a href="#contact" class="text-link">
+            Discuss your project
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+          </a>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span>01</span>
+            <div>
+              <h3>Plan</h3>
+              <p>We define the goal, features, permissions, integrations, and user flow.</p>
+            </div>
+          </article>
+          <article class="step reveal delay-1">
+            <span>02</span>
+            <div>
+              <h3>Build</h3>
+              <p>Your bot or server is developed, configured, and tested against real scenarios.</p>
+            </div>
+          </article>
+          <article class="step reveal delay-2">
+            <span>03</span>
+            <div>
+              <h3>Launch</h3>
+              <p>We deploy the finished system, document it, and make sure your team is ready.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-copy">
+            <span class="section-label">Start a project</span>
+            <h2>Your server can do more.</h2>
+            <p>Tell us what you are building and what is getting in the way.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Discord username</span>
+                <input type="text" name="discord" placeholder="@username" required />
+              </label>
+            </div>
+            <label>
+              <span>What do you need?</span>
+              <select name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Custom Discord bot</option>
+                <option>Complete server setup</option>
+                <option>Automation or integration</option>
+                <option>Existing bot improvements</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label>
+              <span>Project details</span>
+              <textarea name="details" rows="4" placeholder="Describe your idea, server size, and the main features you need." required></textarea>
+            </label>
+            <button class="button button-primary submit-button" type="submit">
+              Send project request
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+            </button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M11 11h26L25 24h12L11 37l12-13H11z"/></svg>
+          </span>
+          <span>SEVENTEK</span>
+        </a>
+        <p>Discord tools, bots, and servers built with purpose.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <strong>Explore</strong>
+          <a href="#services">Services</a>
+          <a href="#flux">Flux.ai</a>
+          <a href="#projects">Tools</a>
+          <a href="#process">Process</a>
+        </div>
+        <div>
+          <strong>Connect</strong>
+          <a href="#contact">Start a project</a>
+          <a href="#" aria-label="Seventek on Discord">Discord</a>
+          <a href="#" aria-label="Seventek on GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Seventek. All rights reserved.</span>
+      <span>Designed for Discord communities.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
