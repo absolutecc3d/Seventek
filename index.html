@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -470,4 +471,117 @@
           </p>
           <a href="#contact" class="text-link">
             Discuss your project
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+          </a>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span>01</span>
+            <div>
+              <h3>Plan</h3>
+              <p>We define the goal, features, permissions, integrations, and user flow.</p>
+            </div>
+          </article>
+          <article class="step reveal delay-1">
+            <span>02</span>
+            <div>
+              <h3>Build</h3>
+              <p>Your bot or server is developed, configured, and tested against real scenarios.</p>
+            </div>
+          </article>
+          <article class="step reveal delay-2">
+            <span>03</span>
+            <div>
+              <h3>Launch</h3>
+              <p>We deploy the finished system, document it, and make sure your team is ready.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-copy">
+            <span class="section-label">Start a project</span>
+            <h2>Your server can do more.</h2>
+            <p>Tell us what you are building and what is getting in the way.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Discord username</span>
+                <input type="text" name="discord" placeholder="@username" required />
+              </label>
+            </div>
+            <label>
+              <span>What do you need?</span>
+              <select name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Custom Discord bot</option>
+                <option>Complete server setup</option>
+                <option>Automation or integration</option>
+                <option>Existing bot improvements</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label>
+              <span>Project details</span>
+              <textarea name="details" rows="4" placeholder="Describe your idea, server size, and the main features you need." required></textarea>
+            </label>
+            <button class="button button-primary submit-button" type="submit">
+              Send project request
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+            </button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M11 11h26L25 24h12L11 37l12-13H11z"/></svg>
+          </span>
+          <span>SEVENTEK</span>
+        </a>
+        <p>Discord tools, bots, and servers built with purpose.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <strong>Explore</strong>
+          <a href="#services">Services</a>
+          <a href="#flux">Flux.ai</a>
+          <a href="#projects">Tools</a>
+          <a href="#process">Process</a>
+        </div>
+        <div>
+          <strong>Connect</strong>
+          <a href="#contact">Start a project</a>
+          <a href="#" aria-label="Seventek on Discord">Discord</a>
+          <a href="#" aria-label="Seventek on GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Seventek. All rights reserved.</span>
+      <span>Designed for Discord communities.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
