@@ -6,6 +6,9 @@ const revealItems = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector(".form-message");
 
+// Initialize EmailJS
+emailjs.init({ publicKey: "wAZidcHvXkGKy6nOj" });
+
 window.addEventListener("scroll", () => {
   header.classList.toggle("scrolled", window.scrollY > 20);
 });
@@ -37,25 +40,33 @@ const revealObserver = new IntersectionObserver(
   },
   { threshold: 0.13 }
 );
-
 revealItems.forEach((item) => revealObserver.observe(item));
 
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const button = contactForm.querySelector(".submit-button");
   const originalText = button.innerHTML;
 
   button.disabled = true;
-  button.textContent = "Request received";
-  formMessage.textContent =
-    "The demo form is working. Connect it to your email service or backend before publishing.";
+  button.textContent = "Sending...";
+  formMessage.textContent = "";
 
-  setTimeout(() => {
-    button.disabled = false;
-    button.innerHTML = originalText;
-    contactForm.reset();
-  }, 2600);
+  emailjs.sendForm("service_yshqaxn", "template_prb0l0t", contactForm)
+    .then(() => {
+      button.textContent = "Request received";
+      formMessage.textContent = "Thanks — your project request has been sent. We'll be in touch soon.";
+      setTimeout(() => {
+        button.disabled = false;
+        button.innerHTML = originalText;
+        contactForm.reset();
+      }, 2600);
+    })
+    .catch((error) => {
+      console.error("EmailJS error:", error);
+      button.disabled = false;
+      button.innerHTML = originalText;
+      formMessage.textContent = "Something went wrong sending your request. Please try again or contact us directly.";
+    });
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
